@@ -1,9 +1,37 @@
 ul {
     list-style-type: none;
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    overflow: hidden;
+    padding: 0px;
+    float: center;
 }
 
 li {
-    float: left;
+    display: table-cell;
+    float: center;
+}
+
+/* Hyperlink properties */
+a:link { /* unvisited link */
+    text-decoration: none; 
+    background-color: lightgrey;
+}
+
+a:visited { /* visited link */
+    text-decoration: none; 
+    background-color: lightgray;
+}
+
+a:hover { /* when mouse is hovered over link */
+    text-decoration: none;
+    background-color: lightslategray;
+}
+
+a:active { /* when link is clicked */
+    text-decoration: none;
+    background-color: dimgrey;
 }
 
 
@@ -11,8 +39,7 @@ li {
 
 .center {
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    padding: 0px;
 }
 
 li a {

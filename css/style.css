@@ -1,11 +1,30 @@
 ul {
     list-style-type: none;
     display: table;
-    width: 100%;
+    width: 50%;
     border-collapse: separate;
     overflow: hidden;
     padding: 0px;
     float: center;
+    margin: auto;
+}
+
+.headerBanner {
+    background-color: orangered;
+}
+
+/* Top menu button properties */
+.mainMenuButton {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Tahoma;
+    color: white;
+}
+
+img#logo {
+    padding-top: 1em;
+    width: 50%;
+    height: auto;
 }
 
 li {
@@ -16,12 +35,12 @@ li {
 /* Hyperlink properties */
 a:link { /* unvisited link */
     text-decoration: none; 
-    background-color: lightgrey;
+    background-color: orangered;
 }
 
 a:visited { /* visited link */
     text-decoration: none; 
-    background-color: lightgray;
+    background-color: orangered;
 }
 
 a:hover { /* when mouse is hovered over link */
@@ -36,7 +55,6 @@ a:active { /* when link is clicked */
 
 
 /* align to center */
-
 .center {
     margin: auto;
     padding: 0px;

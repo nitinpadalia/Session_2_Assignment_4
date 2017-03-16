@@ -21,8 +21,8 @@ div#trainingContainer {
 div.trainingItems {
     display: table-cell;
     position: relative;
-    width: 40%;
     vertical-align: top;
+    margin: auto;
 }
 
 
@@ -49,6 +49,7 @@ aside.leftBar {
 figure {
     display: table-cell;
     vertical-align: top;
+    float: center;
 }
 
 figcaption {
@@ -58,6 +59,7 @@ figcaption {
     color: white;
     padding: 10px;
     position: absolute;
+    margin: 5px;
     bottom: 1em;
     left: 0;
     right: 0;
@@ -72,6 +74,15 @@ aside.rightBar {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+img.trainingItems {
+    width: 250px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
 }
 
 section {

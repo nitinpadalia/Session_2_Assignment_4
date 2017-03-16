@@ -13,6 +13,18 @@ ul.headerMenu {
     background-color: orangered;
 }
 
+div#trainingContainer {
+    display: table;
+    position: relative;
+}
+
+div.trainingItems {
+    display: table-cell;
+    position: relative;
+    width: 40%;
+    vertical-align: top;
+}
+
 
 /* Top menu button properties */
 
@@ -30,7 +42,30 @@ li.headerMenu {
 
 aside.leftBar {
     display: inline-block;
-    width: 20%;
+    width: 18%;
+    vertical-align: top;
+}
+
+figure {
+    display: table-cell;
+    vertical-align: top;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+}
+
+aside.rightBar {
+    display: inline-block;
+    width: 18%;
     vertical-align: top;
 }
 

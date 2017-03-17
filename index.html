@@ -23,67 +23,110 @@
             </div>
         </header>
     </div>
+
     <!-- Page Content section -->
     <div id="bodyContent">
         <!-- Left Aside section for running ads -->
-        <aside class="leftBar">
-            <img src="images/ad-space.jpg">
-            <img src="images/ad-space.jpg">
-        </aside>
-        <section>
-            Wellness is not the mere absence of disease. It is a proactive, preventive approach designed to achieve optimum levels of health, social and emotional functioning. Wellness can also be defined as an active process through which you become aware of and
-            make choices toward a more successful existence.
-            <blockquote>
-                <p>...a state of complete physical, mental, and social well-being, and not merely the absence of disease or infirmity.
-                    <br> - The World Health Organization
-                </p>
-            </blockquote>
-            <article id="training">
-                <h1>Training</h1>
-                <div id="trainingContainer">
-                    <div id="trainingItem-1" class="trainingItems">
-                        <a href="">
-                            <figure>
-                                <figcaption>Build Massive Thighs</figcaption>
-                                <img src="images/buildthigh.jpg" class="trainingItems">
-                            </figure>
-                        </a>
+        <div id="leftAside" class="adbars">
+            <aside>
+                <img src="images/ad-space.jpg">
+                <img src="images/ad-space.jpg">
+            </aside>
+        </div>
+        <!-- Page core contents -->
+        <div id="pageCoreContents" class="contentBlock">
+            <article id="wellnessHome">
+                <section>
+                    <p>
+                        Wellness is not the mere absence of disease. It is a proactive, preventive approach designed to achieve optimum levels of
+                        health, social and emotional functioning. Wellness can also be defined as an active process through
+                        which you become aware of and make choices toward a more successful existence.
+                    </p>
+                    <blockquote>
+                        <p>...a state of complete physical, mental, and social well-being, and not merely the absence of disease
+                            or infirmity.
+                            <br> - The World Health Organization
+                        </p>
+                    </blockquote>
+
+                    <!-- Article container -->
+                    <div id="articleContainer-1" class="articleContainer">
+
+                        <!-- Article flow items -->
+                        <article id="training" class="articles">
+                            <h1>Training</h1>
+
+                            <!-- Training article is divided into three columns -->
+                            <div id="trainingItem-1" class="trainingItems">
+                                <a href="">
+                                    <figure class="overlapCaptionFigure">
+                                        <div class="overlapContainer">
+                                            <img src="images/buildthigh.jpg" class="overlapContainer">
+                                            <figcaption class="overlapCaption">Build Massive Thighs</figcaption>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <div id="trainingItem-2" class="trainingItems">
+                                <a href="">
+                                    <figure class="overlapCaptionFigure">
+                                        <div class="overlapContainer">
+                                            <img src="images/chiseledchest.jpg" class="overlapContainer">
+                                            <figcaption class="overlapCaption">Build Chiseled Chest</figcaption>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <div id="trainingItem-3" class="trainingItems">
+                                <a href="">
+                                    <figure class="overlapCaptionFigure">
+                                        <div class="overlapContainer">
+                                            <img src="images/arms.jpg" class="overlapContainer">
+                                            <figcaption class="overlapCaption">Build Up Bigger Arms</figcaption>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <!-- Nutrition article it will contain one major article in single column-->
+                        <article id="nutrition" class="articles">
+                            <h1>Nutrition</h1>
+
+                            <div id="nutritionItem-1" class="nutritionItem">
+                                <a href="">
+                                    <figure class="overlapCaptionFigure">
+                                        <div class="overlapContainer">
+                                            <img src="images/nutrition.jpg" class="overlapContainer">
+                                            <figcaption class="overlapCaption">10 'Healthy' Foods</figcaption>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </article>
+
                     </div>
-                    <div id="trainingItem-2" class="trainingItems">
-                        <a href="">
-                            <figure>
-                                <figcaption>Build Chiseled Chest</figcaption>
-                                <img src="images/chiseledchest.jpg" class="trainingItems">
-                            </figure>
-                        </a>
-                    </div>
-                    <div id="trainingItem-3" class="trainingItems">
-                        <a href="">
-                            <figure>
-                                <figcaption>Build up Arms</figcaption>
-                                <img src="images/arms.jpg" class="trainingItems">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
+
+                </section>
             </article>
-            <article id="nutrition">
-                <h1>Nutrition</h1>
-            </article>
-            <article id="lifestyle">
-                <h1>Lifestyle</h1>
-            </article>
-            <article id="coach">
-                <h1>Coach</h1>
-            </article>
-            <article id="more">
-                <h1>More</h1>
-            </article>
-        </section>
-        <aside class="rightBar">
-            <img src="images/ad-space.jpg">
-            <img src="images/ad-space.jpg">
-        </aside>
+        </div>
+
+        <!-- Space for ads which will run right side of content -->
+        <div id="rightAside" class="adbars">
+            <aside class="rightBar">
+                <img src="images/ad-space.jpg">
+                <img src="images/ad-space.jpg">
+            </aside>
+        </div>
+    </div>
+
+    <div id="footerContent" class="footerContent">
+        <footer>
+            &#9400; 2016-17 Nitin Padalia; use at your own risk.
+        </footer>
     </div>
 </body>
 

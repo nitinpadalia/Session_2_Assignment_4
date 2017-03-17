@@ -1,3 +1,7 @@
+/**********************************************************
+* Page Header properties
+**********************************************************/
+
 ul.headerMenu {
     list-style-type: none;
     display: table;
@@ -13,18 +17,26 @@ ul.headerMenu {
     background-color: orangered;
 }
 
-div#trainingContainer {
-    display: table;
-    position: relative;
+/* Create header always on top and fixed on scroll */
+.headerContent {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 9999; /* make z-index too high so it stays always on top */
 }
 
-div.trainingItems {
-    display: table-cell;
-    position: relative;
-    vertical-align: top;
-    margin: auto;
+/* Create header always on top and fixed on scroll */
+.footerContent {
+    background-image: url("../images/trainingheader.jpg");
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999; /* make z-index too high so it stays always on top */
 }
-
 
 /* Top menu button properties */
 
@@ -34,66 +46,6 @@ div.trainingItems {
     font-family: Tahoma;
     color: white;
 }
-
-li.headerMenu {
-    display: table-cell;
-    float: center;
-}
-
-aside.leftBar {
-    display: inline-block;
-    width: 18%;
-    vertical-align: top;
-}
-
-figure {
-    display: table-cell;
-    vertical-align: top;
-    float: center;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 1.5em;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    position: absolute;
-    margin: 5px;
-    bottom: 1em;
-    left: 0;
-    right: 0;
-}
-
-aside.rightBar {
-    display: inline-block;
-    width: 18%;
-    vertical-align: top;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-img.trainingItems {
-    width: 250px;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 10px;
-}
-
-section {
-    display: inline-block;
-    width: 60%;
-}
-
-blockquote {
-    background-color: lightgrey;
-}
-
 
 /* Hyperlink properties */
 
@@ -125,3 +77,98 @@ li a {
     display: block;
     padding: 8px;
 }
+
+li.headerMenu {
+    display: table-cell;
+    float: center;
+}
+
+/****** End of page header properties **********/
+
+/************************************************
+* Properties defining page areas
+************************************************/
+
+.contentBlock {
+    display: inline-block;
+    width: 60%;
+    padding: 1.2%;
+    margin-top: 50px;
+}
+
+.adbars {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+
+/****** End of page area properties ************/
+
+blockquote {
+    background-color: lightgrey;
+}
+
+/************************************************
+* Style for images
+************************************************/
+.adbars img {
+    width: 100%;
+}
+
+
+.trainingItems {
+    display: inline-block;
+    width: 30%;
+}
+
+.overlapCaptionFigure {
+    display: table;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 2%;
+}
+
+/* make Caption overlapping to the image by positioning it 
+* absolute to parent
+*/
+.overlapCaptionFigure .overlapContainer {
+    position: relative;
+    width:100%
+}
+
+.overlapCaptionFigure .overlapCaption {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Tahoma;
+    position: absolute;
+    width: 100%;
+    bottom: 1.5em;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    border: 1px solid #ddd;
+    display: table-caption;
+}
+
+
+/******* End of image styles *****/ 
+
+/* header with image ground */
+.articleContainer h1 {
+    background: url("../images/trainingheader.jpg") left bottom;
+    background-color: green;
+    font-size: 2em;
+    font-family: Tahoma; 
+    color: white;
+    height: 1.5em;
+}
+
+/* content para styling */
+.contentBlock p {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+

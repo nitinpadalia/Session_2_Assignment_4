@@ -5,14 +5,30 @@
     <title>Men's Wellness</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-2.css" rel="stylesheet">
+
+    <!-- Internal/Embedded Stylesheet, not a good practice but doing for the sake of assignment
+    relatively less tightly coupled then inline styling still pose challenges in terms of maintainbility -->
+    <style>
+        /* setup html body styling properties */
+        body {
+            background-color: lightgray;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Page menu -->
     <div id="headerContent" class="headerContent">
         <header>
-            <div class="headerMenu">
+
+            <!-- Site logo -->
+            <div class="logo">
+                MensWellness
+            </div>
+
+            <!-- Header navigation menu -->
+            <div id="headerMenu">
                 <ul class="headerMenu">
                     <li class="headerMenu"><a href="#training" class="mainMenuButton">Training</a></li>
                     <li class="headerMenu"><a href="#nutrition" class="mainMenuButton">Nutrition</a></li>
@@ -21,13 +37,14 @@
                     <li class="headerMenu"><a href="#more" class="mainMenuButton">More</a></li>
                 </ul>
             </div>
+
         </header>
     </div>
 
     <!-- Page Content section -->
     <div id="bodyContent">
         <!-- Left Aside section for running ads -->
-        <div id="leftAside" class="adbars">
+        <div id="leftAdBar" class="adbars">
             <aside>
                 <img src="images/ad-space.jpg">
                 <img src="images/ad-space.jpg">
@@ -42,10 +59,14 @@
                         health, social and emotional functioning. Wellness can also be defined as an active process through
                         which you become aware of and make choices toward a more successful existence.
                     </p>
-                    <blockquote>
+                    <!-- style blockquote using inline styling, not recommended but doing for the sake of assignment -->
+                    <blockquote style="border-left: 15px solid #c76c0c;border-right: 2px solid #c76c0c;">
                         <p>...a state of complete physical, mental, and social well-being, and not merely the absence of disease
                             or infirmity.
-                            <br> - The World Health Organization
+                            <!-- style hyperlink for blockquote inline, not a good practice but doing for the sake of assignment
+                             we can see how bad these are in trems of maintainbility of code, as they are tightly coupling our html
+                             data with CSS design -->
+                            <br><a href="http://www.who.int/mediacentre/factsheets/fs220/en/" style="text-decoration: none;background: #eee;cursor: pointer;padding: 0 3px;color: #c76c0c;">- The World Health Organization</a>
                         </p>
                     </blockquote>
 
@@ -115,7 +136,7 @@
         </div>
 
         <!-- Space for ads which will run right side of content -->
-        <div id="rightAside" class="adbars">
+        <div id="rightAdBar" class="adbars">
             <aside class="rightBar">
                 <img src="images/ad-space.jpg">
                 <img src="images/ad-space.jpg">

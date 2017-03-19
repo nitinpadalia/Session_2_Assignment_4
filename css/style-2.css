@@ -103,20 +103,28 @@ li.headerMenu {
 .contentBlock {
     display: inline-block;
     position: absolute;
-    left: 18%;
-    right: 18%;
-    width: 60%;
-    padding: 1.2%;
+
+    /* center align content with 75% area */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 75%;
+   
+    padding: 0.5%;
     margin-top: 50px;
+
+    /* background */
+    background-color: lightgrey;
+    border: 1px solid black;
 }
 
 /* Styling for space for ad bars */
 .adbars {
     display: inline-block;
     position: fixed;
-    width: 18%;
+    width: 10%;
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: 70px;
     z-index: 9899;
 }
 
@@ -191,7 +199,13 @@ blockquote::after{
     display: table;
     border: 1px solid #ccc;
     padding: 3px;
-    margin: 2%;
+
+    /* Align to center */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    
+    background-color: white;
 }
 
 /* make Caption overlapping to the image by positioning it 

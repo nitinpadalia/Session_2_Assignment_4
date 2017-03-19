@@ -199,12 +199,10 @@ blockquote::after{
     display: table;
     border: 1px solid #ccc;
     padding: 3px;
-
-    /* Align to center */
+    
     margin: 0 auto;
     left: 0;
     right: 0;
-    
     background-color: white;
 }
 
